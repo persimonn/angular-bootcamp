@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.input_container {
+    display: flex;
+    width: 100%;
+}
+.input_container {
+    display: flex;
+    width: 100%;
+}
+
+.mat-form-field {
+    display: flex;
+    width: 100%;
+}
+
+.mat-form-field.halfwidth {
+    margin-right: 40px;
+}
+
+
+.signin_link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button_wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.button_wrapper.halfwidth {
+    margin-right: 40px;
+}

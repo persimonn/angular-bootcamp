@@ -1,0 +1,33 @@
+<div class="authorization">
+  <h1 class="authorization_title">Registration</h1>
+  <form class="authorization_form" [formGroup]="form" (ngSubmit)="register()">
+    <div class="input_container">
+      <mat-form-field>
+        <input matInput placeholder="Username" formControlName="username">
+      </mat-form-field>
+    </div>
+    <div class="input_container">
+      <mat-form-field>
+        <input matInput placeholder="Email" formControlName="email">
+      </mat-form-field>
+    </div> 
+    <div class="input_container"> 
+      <mat-form-field class="halfwidth">
+        <input matInput placeholder="Password" formControlName="password">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Confirm password" formControlName="confirmPassword">
+      </mat-form-field>
+    </div>
+    <div class="input_container">
+      <div class="button_wrapper halfwidth">
+        <a href="#" class="signin_link">Sign in</a>
+      </div>
+      <div class="button_wrapper">
+        <button mat-raised-button color="primary" type="submit">Register me!</button>
+      </div>
+    </div>
+  </form>
+  <div class=“authorization_success_message”>{{message}}</div>
+</div>
+
