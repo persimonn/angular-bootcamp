@@ -15,7 +15,6 @@ import { LoginComponent } from './login/login.component';
     MatInputModule,
     MatFormFieldModule,
   ],
-  declarations: [RegistrationComponent, LoginComponent],
-  exports: [RegistrationComponent, LoginComponent],
+  declarations: [RegistrationComponent, LoginComponent]
 })
 export class AuthenticationModule { }

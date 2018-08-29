@@ -43,3 +43,27 @@ body {
 .button_wrapper.halfwidth {
     margin-right: 40px;
 }
+
+.header_wrapper {
+  min-height: 80px;
+  background-color: navy;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.header_user {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_wrapper .user_name {
+  color: whitesmoke;
+  font-size: 20px;
+  font-weight: bold;
+} 
+
+.mat-button {
+  background-color: lightgrey;
+  font-size: 18px;
+  font-weight: bold;
+}

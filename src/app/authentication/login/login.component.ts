@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
       (response) => {
         this.userService.setToken(response.payload.token);
         this.userService.getUserProfile().subscribe();
-        // this.router.navigate(['feed'])
+        this.router.navigate(['feed'])
       }
     );
   }

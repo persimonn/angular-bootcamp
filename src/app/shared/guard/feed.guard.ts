@@ -7,7 +7,7 @@ import { UserService } from '../services/user.service';
   providedIn: 'root'
 })
 
-export class UserGuard implements CanLoad {
+export class FeedGuard implements CanLoad {
 
   constructor(private userService: UserService, 
               private router: Router) {
@@ -16,12 +16,12 @@ export class UserGuard implements CanLoad {
     return Observable.create((observer: Observer<boolean>) => {
       this.userService.getUserProfile().subscribe(
         (response) => {
-          this.router.navigate(['feed']);
-          observer.next(false);
+          observer.next(true);
           observer.complete();
         },
         (error) => {
-          observer.next(true);
+          this.router.navigate(['auth/login']);
+          observer.next(false);
           observer.complete(); 
         });
     });

@@ -36,6 +36,15 @@ export class UserService {
     localStorage.setItem('token', token);
     this.token = token;
   }
+  logout(): void {
+    this.removeToken();
+    this._userSource.next(null);
+    this.router.navigateByUrl('auth/login');
+  } 
+  removeToken() {
+    localStorage.removeItem('token');
+    this.token = null;
+  }
   getToken(): string {
     if (!this.token) {
       this.token = localStorage.getItem('token');

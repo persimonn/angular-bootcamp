@@ -28,6 +28,8 @@ import { Login } from '../shared/DTO/login.model';
     );
   }
 
+  
+
   login(payload: { email: string, password: string }) {
     const data = {
       hashedPassword: this.helpersService.hashToSHA256(payload.password),
