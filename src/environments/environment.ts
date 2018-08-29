@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   postRegistrationUrl: "http://localhost:3000/api/v1/auth/users", // + payload
-  postLoginUrl: "http://localhost:3000/api/v1/auth/session"
+  postLoginUrl: "http://localhost:3000/api/v1/auth/session",
+  getUserUrl: "http://localhost:3000/api/v1/users/self"
 };
 
 /*

@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  // { path: '', redirectTo: 'auth', pathMatch: 'full' },
+  // { path: 'auth', loadChildren: './authentication/authentication.module#AuthenticationModule', canLoad: [UserGuard]},
+  // { path: '**', redirectTo: '' }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    onSameUrlNavigation: 'reload'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

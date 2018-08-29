@@ -7,6 +7,7 @@ import { AuthenticationService } from '../authentication.service';
   templateUrl: './registration.component.html',
   styleUrls: ['./registration.component.scss']
 })
+
 export class RegistrationComponent implements OnInit {
 
   form: FormGroup;

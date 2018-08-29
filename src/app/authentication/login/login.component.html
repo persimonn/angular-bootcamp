@@ -1,6 +1,6 @@
 <div class="authorization">
-    <h1 class="authorization_title">Registration</h1>
-    <form class="authorization_form" [formGroup]="form" (ngSubmit)="register()">
+    <h1 class="authorization_title">Login</h1>
+    <form class="authorization_form" [formGroup]="form" (ngSubmit)="login()">
       <div class="input_container">
         <mat-form-field>
           <input matInput placeholder="Email" formControlName="email">
@@ -12,7 +12,7 @@
         </mat-form-field>
       </div>
       <div class="input_container">
-        <button mat-raised-button color="primary" type="submit">Register me!</button>
+        <button mat-raised-button color="primary" type="submit">Log me in!</button>
       </div>
     </form>
   </div>
