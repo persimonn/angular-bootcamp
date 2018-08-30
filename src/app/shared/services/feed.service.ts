@@ -14,9 +14,20 @@ export class FeedService {
   constructor(private http: HttpClient,
     private helpersService: HelpersService) { }
 
-   getFeed(): Observable<Response<FeedItem[]>> { 
+  getFeed(): Observable<Response<FeedItem[]>> { 
     return this.http.get<Response<FeedItem[]>>(environment.getFeedUrl)
     .pipe(
       catchError(this.helpersService.handleError('getFeed'))
     );
-}}
+  }
+
+  getPost(id): Observable<Response<FeedItem>> { 
+    return this.http.get<Response<FeedItem>>(environment.getPostUrl + id)
+    .pipe(
+      catchError(this.helpersService.handleError('getPost'))
+    );
+  }
+
+
+}
+

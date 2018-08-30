@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { UserService } from '../../services/user.service';
-import { User} from '../../DTO/user.model';
+import { User } from '../../DTO/user.model';
 
 @Component({
   selector: 'bc-header',

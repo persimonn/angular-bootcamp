@@ -1,8 +1,8 @@
-<div class="page_holder">
-  <ul>
-    <li *ngFor="let item of items">
-      <div>{{item.title}}</div>
-      <img src={{}} />
-    </li>
+<div class="feed_holder">
+  <ul class="feed_items_list" *ngFor="let item of items">
+    <bc-feed-item  
+      [item]="item">
+    </bc-feed-item>
+    <a [routerLink]="item._id" class="feed_item_link">More...</a>  
   </ul>
 </div>

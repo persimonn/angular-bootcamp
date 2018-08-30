@@ -22,7 +22,7 @@ export class FeedComponent implements OnInit {
   private getFeed(): void {
     this.feedService.getFeed().subscribe(
       (response) => {
-        this.items = response.payload;
+        this.items = response.payload.reverse();
       });
   }
 }

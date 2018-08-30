@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthenticationService } from '../authentication.service';
+import { PasswordValidation } from '../../shared/validators/password.validator';
 
 @Component({
   selector: 'bc-registration',
@@ -38,8 +39,10 @@ export class RegistrationComponent implements OnInit {
           Validators.required,
           Validators.pattern(/[a-zA-Z0-9]{8,}/)
         ])
-      }
-    )
+      },
+      {
+        validator: PasswordValidation.MatchPassword
+      });
   }
   register() {
     if (this.form.invalid) {

@@ -4,7 +4,7 @@ import { UserGuard } from './shared/guard/user.guard';
 import { FeedGuard } from './shared/guard/feed.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'auth/login', pathMatch: 'full' },
+  { path: '', redirectTo: 'feed', pathMatch: 'full' },
   { path: 'feed', loadChildren: './feed/feed.module#FeedModule', canLoad: [FeedGuard] },
   { path: 'auth', loadChildren: './authentication/authentication.module#AuthenticationModule', canLoad: [UserGuard]},
   { path: '**', redirectTo: '' }

@@ -2,7 +2,7 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
 body {
-    font-family: "Cambria", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .authorization {
@@ -66,4 +66,89 @@ body {
   background-color: lightgrey;
   font-size: 18px;
   font-weight: bold;
+}
+
+.feed_holder,
+.post_page {
+    width: 700px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    background-color: #dce1e5;
+}
+
+.feed_items_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.feed_item {
+  list-style: none;
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.feed_item_title {
+  font-size: 24px;
+  color: #0d1523;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.feed_item_author {
+  font-size: 20px;
+}
+
+
+.feed_item_author_link {
+  text-decoration: none;
+  color: navy}
+
+.feed_item_date {
+  font-style: italic;
+}
+
+.feed_image_container {
+    width: 500px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.feed_item_image {
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.post_item {
+  display: flex;
+  justify-content: center;
+}
+
+.feed_item_link {
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.confirmpassword {
+  position: relative;
+}
+
+.password_error_message {
+  //position: absolute;
+  display: block;
+  width: 120px;
+  background-color: grey;
+  z-index: 20;
 }

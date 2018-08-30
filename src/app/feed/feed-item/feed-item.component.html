@@ -1,0 +1,8 @@
+<li class="feed_item">
+  <h3 class="feed_item_title">{{item.title}}</h3>
+  <div class="feed_item_author">Author: <a class="feed_item_author_link" href="">{{item.username}}</a></div>
+  <div class="feed_item_date">{{item.createdAt | date}}</div>
+  <div class="feed_image_container">
+    <img class="feed_item_image" [src]="'http://localhost:3000' + item.media.path" />
+  </div>  
+</li>   
