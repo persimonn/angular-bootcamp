@@ -8,7 +8,9 @@ export const environment = {
   postLoginUrl: "http://localhost:3000/api/v1/auth/session",
   getUserUrl: "http://localhost:3000/api/v1/users/self",
   getFeedUrl: "http://localhost:3000/api/v1/media",
-  getPostUrl: "http://localhost:3000/api/v1/media/"
+  getPostUrl: "http://localhost:3000/api/v1/media/",
+  uploadImageUrl: "http://localhost:3000/api/v1/media/content/image",
+  uploadPostUrl: "http://localhost:3000/api/v1/media"
 };
 
 /*

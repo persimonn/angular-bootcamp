@@ -1,0 +1,19 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2 class="modal-title">Create post</h2>
+      <button type="button" class="button">Close</button>
+    </div>
+    <div class="modal-body">
+      <input (change)="uploadImage($event)" type="file" accept="image/*" class="file-upload-button button">
+      <img [src]="image?.url || '' ">
+      <form [formGroup]="form" (ngSubmit)="uploadPost()">
+        <div class="caption-wrapper">
+          <label class="caption-label">Caption</label>
+          <input class="caption-field" formControlName="caption" type="text">
+        </div>
+        <button mat-button type="submit" class="button">Post</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,7 @@
 <div class="header_wrapper">
   <div class="header_user" *ngIf="user">
     <div class="user_name">Welcome, {{user?.username}}!</div>
+    <button mat-button color="primary" (click)="createPost()">Create Post</button>
     <button mat-button color="primary" (click)="logout()">Log Out</button>
   </div>
 </div>

@@ -152,3 +152,60 @@ body {
   background-color: grey;
   z-index: 20;
 }
+
+.modal-dialog {
+  padding: 50px;
+  width: 500px;
+  min-height: 280px;
+  font-size: 20px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 24px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.caption-wrapper {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.caption-label {
+  margin-right: 30px;
+}
+
+.caption-field {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.modal-body {
+  margin-bottom: 50px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  background-color: lightgrey;
+  font-size: 18px;
+  font-weight: bold;
+}
+.file-upload-button {
+  margin-right: 20px;
+}
